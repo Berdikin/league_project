@@ -1,0 +1,14 @@
+{% extends 'insurance95/base.html' %}
+
+{% block content %}
+<h1>Клиент №{{post.client_id}}</h1>
+
+<li <h1>ФИО: </h1>{{post.surname}} {{post.name}} {{post.patronymic}} </li>
+<li <h1>Признак страхования: </h1>{{post.entity}} Телефон: {{post.mobile_number}} {{post.patronymic}} </li>
+<li <h1>Серия паспорта: {{passport_client.series}} Номер паспорта: {{passport_client.number}}</h1>
+<li <h1>Дата рождения: {{passport_client.date_birth}} </h1>
+<li <h1>Дата выдачи паспорта: {{passport_client.date_issue}} Код подразделения: {{passport_client.division_code}}</h1>
+<li <h1>Регион: {{passport_client.region}} Место выдачи: {{passport_client.place_birth}}</h1>
+
+
+{% endblock %}}

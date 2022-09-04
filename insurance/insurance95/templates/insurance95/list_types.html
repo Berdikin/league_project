@@ -1,0 +1,7 @@
+{% for c in types %}
+	{% if c.type_id == type_selected %}
+		<li class="selected">{{c.type_name}}</li>
+	{% else %}
+		<li><a href="{{ c.get_absolute_url }}">{{c.type_name}}</a></li>
+	{% endif %}
+{% endfor %}
